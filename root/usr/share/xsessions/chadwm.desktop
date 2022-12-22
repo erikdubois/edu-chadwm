@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Chadwm
+Comment=Dynamic window manager
+Exec=~/.config/arco-chadwm/scripts/run.sh 
+Icon=chadwm
+Type=Application
