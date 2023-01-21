@@ -37,7 +37,7 @@ rm -rf root
 mkdir root
 rm -rf /tmp/input
 
-directories=(arcolinux-chadwm)
+directories=(arcolinux-chadwm arcolinux-chadwm-pacman-hook)
 
 count=0
 
