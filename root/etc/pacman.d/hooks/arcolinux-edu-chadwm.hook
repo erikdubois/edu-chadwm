@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = edu-chadwm-git
+Target = edu-chadwm-nemesis-git
+
+[Action]
+Description = Pacman hook to keep your personal chadwm running
+When = PostTransaction
+Exec = /usr/local/bin/arcolinux-chadwm-build

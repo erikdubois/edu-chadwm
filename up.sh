@@ -48,10 +48,13 @@ for name in "${directories[@]}"; do
 	git clone https://github.com/arcolinux/$name --depth=1  /tmp/input
 
 	rm -rf /tmp/input/.git
-	rm /tmp/input/git*
+	rm /tmp/input/up*
 	rm /tmp/input/LICENSE
 	rm /tmp/input/README.md
 	rm /tmp/input/setup-our-git-credentials.sh
+	rm /tmp/input/make*
+
+
 
 	cp -r /tmp/input/* root
 
@@ -63,6 +66,8 @@ for name in "${directories[@]}"; do
 	echo "#################################################"
 	tput sgr0;
 done
+
+cp arcolinux-edu-chadwm.hook root/etc/pacman.d/hooks/
 
 git add --all .
 
