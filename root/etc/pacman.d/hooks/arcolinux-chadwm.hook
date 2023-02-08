@@ -2,6 +2,7 @@
 Operation = Upgrade
 Type = Package
 Target = arcolinux-chadwm-git
+Target = arcolinux-chadwm-nemesis-git
 
 [Action]
 Description = Pacman hook to keep your personal chadwm running
