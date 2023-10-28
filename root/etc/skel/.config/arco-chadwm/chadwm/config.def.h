@@ -37,14 +37,16 @@ static const int new_window_attach_on_end = 0; /*  1 means the new window will a
 #define ICONSIZE 19   /* icon size */
 #define ICONSPACING 8 /* space between icon and title */
 
-static const char *fonts[]          = {"JetBrainsMono Nerd Font:style:medium:size=12"};
+static const char *fonts[]          = {"JetBrainsMono Nerd Font Mono:style:bold:size=13"};
 
 // theme
 #include "themes/onedark.h"
 //#include "themes/catppuccin.h"
-//#include "themes/nord.h"
-//#include "themes/gruvchad.h"
 //#include "themes/dracula.h"
+//#include "themes/gruvchad.h"
+//#include "themes/nord.h"
+//#include "themes/tokyonight.h"
+
 
 static const char *colors[][3]      = {
     /*                     fg       bg      border */
@@ -71,7 +73,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
+static char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
 //static char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
 //static char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X" };
 //static char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
@@ -187,6 +189,10 @@ static const Key keys[] = {
     { MODKEY,                           XK_i,       incnmaster,     {.i = +1 } },
     { MODKEY,                           XK_d,       incnmaster,     {.i = -1 } },
 
+    // shift view
+    { MODKEY,                           XK_Left,    shiftview,      {.i = -1 } },
+    { MODKEY,                           XK_Right,   shiftview,      {.i = +1 } },
+
     // change m,cfact sizes 
     { MODKEY,                           XK_h,       setmfact,       {.f = -0.05} },
     { MODKEY,                           XK_l,       setmfact,       {.f = +0.05} },
@@ -197,7 +203,7 @@ static const Key keys[] = {
 
     { MODKEY|ShiftMask,                 XK_j,       movestack,      {.i = +1 } },
     { MODKEY|ShiftMask,                 XK_k,       movestack,      {.i = -1 } },
-    { MODKEY|ShiftMask,                 XK_Return,  zoom,           {0} },
+    //{ MODKEY|ShiftMask,                 XK_Return,  zoom,           {0} },
     { MODKEY,                           XK_Tab,     view,           {0} },
 
     // overall gaps
@@ -246,7 +252,7 @@ static const Key keys[] = {
     { MODKEY|ShiftMask,                 XK_w,       setborderpx,    {.i = default_border } },
 
     // kill dwm
-    //{ MODKEY|ControlMask,               XK_q,       spawn,        SHCMD("killall bar.sh dwm") },
+    //{ MODKEY|ControlMask,               XK_q,       spawn,        SHCMD("killall bar.sh chadwm") },
 
     // kill window
     { MODKEY,                           XK_q,       killclient,     {0} },
