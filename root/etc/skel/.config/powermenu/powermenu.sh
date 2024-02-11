@@ -6,6 +6,12 @@
 ## Rofi   : Power Menu
 #
 
+# host or hostname - comes from inetutils - install it with pacman
+# when missing
+
+# locking can be done with a variety of i3lock apps and more"
+# install and change to what you like
+
 # Current Theme
 dir="$HOME/.config/powermenu/"
 theme='style-default'
@@ -70,6 +76,9 @@ run_cmd() {
 			desktop=$(echo  $DESKTOP_SESSION)
 			echo "You are on "$desktop
 			case $desktop in
+				dk)
+					dkcmd exit
+					;;
 				hyprland)
 					hyprctl dispatch exit
 					;;
