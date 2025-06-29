@@ -415,3 +415,10 @@ XF86MonBrightnessDown
 #Picom Toggle
 ctrl + alt + o
     ~/.config/arco-chadwm/scripts/picom-toggle.sh
+
+#update
+ctrl + alt + shift + F1
+   update-system
+
+super + ctrl + shift + F1
+   update-system
