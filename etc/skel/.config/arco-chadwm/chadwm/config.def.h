@@ -101,13 +101,13 @@ static const char* pavucontrol[] = { "pavucontrol", NULL };
 static const Launcher launchers[] = {
     /* command     name to display */
 
-    { discord,       "ﱲ" },
+    //{ discord,       "ﱲ" },
     { firefox,       "" },
     { brave,         "" },
     { opera,         "" },
     { mintstick,     "虜" },
     { pavucontrol,   "墳" },
-    { telegram,      "" },
+    //{ telegram,      "" },
     { vivaldi,       "" },
 };
 

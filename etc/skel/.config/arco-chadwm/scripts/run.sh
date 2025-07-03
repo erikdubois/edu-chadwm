@@ -13,7 +13,7 @@ function run {
   fi
 }
 
-run "dex /usr/share/applications/signal-tray.desktop"
+#run "signal-in-tray"
 #run "dex $HOME/.config/autostart/arcolinux-welcome-app.desktop"
 
 #for virtualbox
