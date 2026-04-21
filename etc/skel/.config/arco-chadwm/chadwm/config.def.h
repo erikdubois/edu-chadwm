@@ -85,8 +85,8 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
-//static char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
+//static char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
+static char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" };
 //static char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X" };
 //static char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
 //static char *tags[] = { "Web", "Chat", "Edit", "Meld", "Vb", "Mail", "Video", "Image", "Files", "Music" };
