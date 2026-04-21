@@ -108,9 +108,9 @@ static const Launcher launchers[] = {
     { firefox,       "" },
     { brave,         "" },
     { opera,         "" },
-    { mintstick,     "虜" },
-    { pavucontrol,   "墳" },
-    //{ telegram,      "" },
+    { mintstick,     "" },
+    { pavucontrol,   "" },
+    //{ telegram,      "" },
     { vivaldi,       "" },
 };
 
