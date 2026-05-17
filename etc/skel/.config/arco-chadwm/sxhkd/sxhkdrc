@@ -58,13 +58,13 @@ super + F12
 # SUPER + ... KEYS
 #################################################################
 
-#Atom
+#Code
 super + e
     code
 
 #Browser
 super + w
-    vivaldi-stable
+    firefox
 
 #Conky-toggle
 super + c
@@ -78,36 +78,24 @@ super + x
 super + shift + x
     edu-powermenu
 
-#nlogout
-alt + shift + x
-    nlogout
-
-#nlogout
-alt + x
-    nlogout
-
 #Rofi theme selector
 super + r
     rofi-theme-selector
 
 #Alacritty
 super + t
-    st
+    alacritty
 
 #Pavucontrol
 super + v
     pavucontrol
-
-#Pragha
-#super + m
-#    pragha
 
 #alacritty
 super + Return
     alacritty
 
 #Xkill
-super + Escape
+super + shift + Escape
     xkill
 
 #Keyboard dependent
@@ -145,25 +133,17 @@ super + shift + s
 # CONTROL + ALT KEYS
 #################################################################
 
-#arcolinux-application-glade
-ctrl + alt + h
-     arcolinux-app-glade
-
-#arcolinux-welcome-app
-ctrl + alt + w
-     arcolinux-welcome-app
-
 #archlinux-tweak-tool
 ctrl + alt + e
     archlinux-tweak-tool
 
-#conky-rotate
-ctrl + alt + Next
-     conky-rotate -n
+#alacritty-tweak-tool
+ctrl + alt + a
+    alacritty-tweak-tool
 
-#conky-rotate
-ctrl + alt + Prior
-    conky-rotate -p
+#alacritty-tweak-tool
+ctrl + alt + q
+    alacritty-tweak-tool
 
 #File-Manager
 ctrl + alt + b
@@ -180,10 +160,6 @@ ctrl + alt + g
 #Firefox
 ctrl + alt + f
      firefox
-
-#Nitrogen
-ctrl + alt + i
-     nitrogen
 
 #archlinux-logout
 ctrl + alt + k
@@ -216,9 +192,9 @@ ctrl + alt + r
 ctrl + alt + s
    spotify
 
-#st
+#alacritty
 ctrl + alt + Return
-    st
+    alacritty
 
 #alacritty
 ctrl + alt + t
@@ -227,17 +203,6 @@ ctrl + alt + t
 #Vivaldi
 ctrl + alt + v
     vivaldi-stable
-
-#Xfce4-appfinder
-ctrl + alt + a
-    xfce4-appfinder
-
-
-#Keyboard dependent
-#alacritty
-#ctrl + alt + KP_Enter
-#     alacritty
-
 
 #################################################################
 # ALT + ... KEYS
@@ -275,6 +240,10 @@ alt + Up
 alt + Down
     variety --resume
 
+#wallpaper selector
+super + ctrl + space
+    variety --selector
+
 #Xfce4-appfinder
 alt + F2
     xfce4-appfinder --collapsed
@@ -282,7 +251,6 @@ alt + F2
 #Xfce4-appfinder
 alt + F3
     xfce4-appfinder
-
 
 #################################################################
 #VARIETY KEYS WITH PYWAL
@@ -317,10 +285,10 @@ ctrl + shift + Escape
     xfce4-taskmanager
 
 ctrl + alt + End
-    dex --term alacritty /usr/share/applications/btop.desktop
+    alacritty -e btop
 
 ctrl + alt + n
-    dex --term alacritty /usr/share/applications/btop.desktop
+    alacritty -e btop
 
 #################################################################
 #     SCREENSHOTS
