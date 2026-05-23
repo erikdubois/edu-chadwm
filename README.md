@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="kiro.jpg" alt="Kiro" width="220" />
+</p>
+
 # edu-chadwm
 
 Educational / tutorial repository for **chadwm**, a patched-out dwm flavour by [siduck](https://github.com/siduck/chadwm) that ships eye-candy features (bar, gaps, layouts) on top of suckless dwm. Part of the `~/EDU/` learning series.
