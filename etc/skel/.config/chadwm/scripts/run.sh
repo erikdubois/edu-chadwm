@@ -14,7 +14,6 @@ function run {
 }
 
 #run "signal-in-tray"
-#run "dex $HOME/.config/autostart/arcolinux-welcome-app.desktop"
 
 #for virtualbox
 #run xrandr --output Virtual-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal
@@ -41,23 +40,20 @@ run "xfce4-clipman"
 run "blueberry-tray"
 run "/usr/lib/xfce4/notifyd/xfce4-notifyd"
 run "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-picom -b  --config ~/.config/arco-chadwm/picom/picom.conf &
-# picom -b  --config ~/.config/arco-chadwm/picom/picom-cachyos.conf &
-# picom -b  --config ~/.config/arco-chadwm/picom/picom-edu-dwm.conf &
-# picom -b  --config ~/.config/arco-chadwm/picom/picom-edu-nodwm.conf &
-# picom -b  --config ~/.config/arco-chadwm/picom/picom-original.conf &
+picom -b  --config ~/.config/chadwm/picom/picom.conf &
+# picom -b  --config ~/.config/chadwm/picom/picom-cachyos.conf &
+# picom -b  --config ~/.config/chadwm/picom/picom-edu-dwm.conf &
+# picom -b  --config ~/.config/chadwm/picom/picom-edu-nodwm.conf &
+# picom -b  --config ~/.config/chadwm/picom/picom-original.conf &
 # picom --backend glx --vsync &
 run "numlockx on"
 run "volctl"
 #run "pa-applet"
-sxhkd -c ~/.config/arco-chadwm/sxhkd/sxhkdrc &
-#run "nitrogen --restore"
-#run "conky -c $HOME/.config/arco-chadwm/conky/system-overview"
+sxhkd -c ~/.config/chadwm/sxhkd/sxhkdrc &
 #you can set wallpapers in themes as well
 #feh --bg-fill /usr/share/backgrounds/archlinux/arch-wallpaper.jpg &
-#feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
-#feh --bg-fill ~/.config/arco-chadwm/wallpaper/chadwm.jpg &
-feh --bg-fill ~/.config/arco-chadwm/wallpaper/chadwm2.jpg &
+#feh --bg-fill ~/.config/chadwm/wallpaper/chadwm.jpg &
+feh --bg-fill ~/.config/chadwm/wallpaper/chadwm2.jpg &
 #feh --randomize --bg-fill /home/erik/Insync/Apps/Wallhaven/*
 
 
@@ -78,5 +74,5 @@ feh --bg-fill ~/.config/arco-chadwm/wallpaper/chadwm2.jpg &
 
 
 pkill bar.sh
-~/.config/arco-chadwm/scripts/bar.sh &
+~/.config/chadwm/scripts/bar.sh &
 while type chadwm >/dev/null; do chadwm && continue || break; done

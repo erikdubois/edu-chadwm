@@ -35,7 +35,7 @@
   Super  Shift  1 .. 0    *move container to workspace 1 .. 10*
 
 # notes
-  - *Chadwm* configuration files are in `~/.config/arco-chadwm/`.
+  - *Chadwm* configuration files are in `~/.config/chadwm/`.
     Read all the files with the editor of your choice.
     More keybindings are included in the config.
   - Follow the github - https://github.com/siduck/chadwm
