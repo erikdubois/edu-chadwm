@@ -379,12 +379,12 @@ XF86MonBrightnessDown
 # CTRL + ALT KEYS
 #################################################################
 
-#Picom Toggle
+#Opera
 ctrl + alt + o
     opera
 
 #Compositor Toggle
-super + p
+super + g
     ~/.config/chadwm/scripts/fastcompmgr-toggle.sh
 
 #update
